@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title><{$xoops_sitename}> <{$xoops_pagetitle}></title>
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_imageurl}>style.css" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta http-equiv="Content-Type" content="text/html; charset=<{$xoops_charset}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+
+
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+
+
+<meta name="author" content="<{$xoops_meta_author}>" />
+
+
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+
+<link href="<{$xoops_imageurl}>/favicon.ico" rel="SHORTCUT ICON" />
+<!-- RMV: added module header -->
+
+
+<{$xoops_module_header}>
+
+
+<script type="text/javascript">
+
+
+<!--
+
+
+<{$xoops_js}>
+
+
+//-->
+
+
+</script>
+
+</head>
+
+<body>
+<!--- Casafree.com Copyright notice : Please do not remove this -->
+<div id="design">This theme is made by Casafree <a href="http://www.casafree.com">Maroc</a> and can be downloaded from <a href="http://www.insidecasafree.com">insidecasafree.com</a></div>
+<!--- End of Copyright notice : Please do not remove this -->
+
+<!-- Feel free to edit this theme follow comments if you need help-->
+<table width="100%" border="0" cellspacing="5" cellpadding="0">
+  <tr>
+    <td width="200" valign="top" ><div id="left">
+	
+	
+	
+	<!-- Your vertical Menu edit the links to suite your content -->
+	
+	
+	
+     <a href="<{$xoops_url}>">Home</a> <a href="<{$xoops_url}>/modules/news/">News</a> <a href="<{$xoops_url}>/modules/newbb/">Forum</a> <a href="<{$xoops_url}>/modules/weblinks/">Links</a> <a href="<{$xoops_url}>/modules/xcgal/">Photos Album</a> <a href="<{$xoops_url}>/modules/support/">Support</a> <a href="<{$xoops_url}>/modules/contact">Contact us</a>
+	 
+	 
+	 
+	 <!-- End of vertical Menu  -->
+	
+      </div></td>
+    <td valign="top"><div id="backcenter">
+        <div id="center">
+		<!-- Write here betwin the <h1> AND </h1> the Title of your website-->
+          <h1><{$xoops_sitename}></h1>
+		<!-- Write here betwin the <h2> AND </h2> Your slogan-->
+             <h2>Your sexy slogan goes here
+             Have fun ! </h2>
+		<!-- end of blue horizontal bar -->
+		
+				<!-- You don't need to edit what follow -->
+			 
+        </div>
+    </div></td>
+    <td width="160" valign="top" ><div id="right">
+      <p>&nbsp;</p>
+      </div></td>
+  </tr>
+  <tr>
+    <td width="200" align="left" valign="top" ><div id="leftbloc">
+<{foreach item=block from=$xoops_lblocks}> <{include file="atlantic/bloc_left.html"}> <{/foreach}>
+      </div></td>
+    <td valign="top"><div id="contenucentre"><div id="atcont"><{$xoops_contents}></div><br />
+      <{if $xoops_showcblock == 1}>
+	  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="100%" ><{foreach item=block from=$xoops_ccblocks}> <{include file="atlantic/bloc_center.html"}> <{/foreach}> </td>
+        </tr>
+      </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td valign="top" >  <!-- Start center-left blocks loop --> 
+<{foreach item=block from=$xoops_clblocks}> <{include file="atlantic/bloc_center.html"}> <{/foreach}> 
+                    <!-- End center-left blocks loop --> </td>
+          <td width="50%" valign="top"> <!-- Start center-left blocks loop --> 
+<{foreach item=block from=$xoops_clblocks}> <{include file="atlantic/bloc_center.html"}> <{/foreach}> 
+                    <!-- End center-left blocks loop --> </td>
+        </tr>
+      </table>
+      <{/if}>
+      <br />
+      <br />
+    </div>
+    </td>
+    <td width="160" valign="top" ><div class="style4" id="rightbloc">
+     <{foreach item=block from=$xoops_rblocks}> <{include file="atlantic/bloc_right.html"}> <{/foreach}>
+    </div></td>
+  </tr>
+</table>
+<div id="footback"> <span class="style1"><{$xoops_footer}> - <{$meta_copyright}><br />
+  <{$xoops_sitename}> : <{$xoops_meta_description}><br />
+  <strong>RSS Syndication :</strong></span><br />
+  <span class="style2"><a target="_blank" href="http://add.my.yahoo.com/rss?url=&lt;{$xoops_url}&gt;/backend.php"><img src="http://us.i1.yimg.com/us.yimg.com/i/us/my/addtomyyahoo4.gif" width="91" height="17" border="0" /></a><a target="_blank" href="http://www.bloglines.com/sub/&lt;{$xoops_url}&gt;/backend.php"></a>&nbsp;<a target="_blank" href="http://fusion.google.com/add?feedurl=&lt;{$xoops_url}&gt;/backend.php"><img src="http://buttons.googlesyndication.com/fusion/add.gif" alt="Add to Google" width="104" height="17" border="0" /></a>&nbsp; <a target="_blank" href="http://www.netvibes.com/subscribe.php?url=&lt;{$xoops_url}&gt;/backend.php"><img src="http://www.netvibes.com/img/add2netvibes.gif" alt="Add to Netvibes" width="91" height="17" border="0" /></a>&nbsp; <a target="_blank" href="http://www.newsgator.com/ngs/subscriber/subext.aspx?url=&lt;{$xoops_url}&gt;/backend.php"><img src="http://www.newsgator.com/images/ngsub1.gif" border="0" /></a></span><br />
+  <strong>Credits :</strong> Powered by <a href="http://www.xoops.org">Xoops</a> - Design by <a href="http://www.casafree.com/modules/xcgal/">Album photos</a> <a href="http://www.casafree.com/">Casafree</a></div>
+</body>
+</html>
